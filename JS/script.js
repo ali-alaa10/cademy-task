@@ -77,6 +77,10 @@
 // console.log('a' >= 'z')
 // console.log('z' >= 'a')
 
+
+// ===========================================
+
+
 // let uname = "Ali";
 
 // let first = uname.padStart(uname.length+5, "$");
@@ -96,29 +100,37 @@
 // let end = str.padEnd(str.length+3, "$");
 // console.log(first + end.replace(str,""));
 
-let uname = "Ali";
-let uage = "20";
-let uphone = "01121944524";
-let upoints = 0;
+// ========================================================================================
 
-if (uphone.startsWith("010")) {
-  upoints += 5;
-} else if (uphone.startsWith("011")) {
-  upoints += 50;
-} else if (uphone.startsWith("012")) {
-  upoints += 7;
-} else if (uphone.startsWith("015")) {
-  upoints += 10;
-}
 
-console.log(`Hi ${uname} You earned ${upoints} points`);
+// let uname = "Ali";
+// let uage = "20";
+// let uphone = "01121944524";
+// let upoints = 0;
 
-if (uage >= 18) {
-  console.log(
-    `Holla ${uname} Your Age is ${uage} , You are qualified to travel with us :)`
-  );
-} else {
-  console.log(
-    `Hi ${uname} Your Age is ${uage} , We sorry You are not qualified to travel with us :-(`
-  );
-}
+// if (uphone.startsWith("010")) {
+//   upoints += 5;
+// } else if (uphone.startsWith("011")) {
+//   upoints += 50;
+// } else if (uphone.startsWith("012")) {
+//   upoints += 7;
+// } else if (uphone.startsWith("015")) {
+//   upoints += 10;
+// }
+
+// console.log(`Hi ${uname} You earned ${upoints} points`);
+
+// if (uage >= 18) {
+//   console.log(
+//     `Holla ${uname} Your Age is ${uage} , You are qualified to travel with us :)`
+//   );
+// } else {
+//   console.log(
+//     `Hi ${uname} Your Age is ${uage} , We sorry You are not qualified to travel with us :-(`
+//   );
+// }
+
+// ===================================================================================================
+
+
+
