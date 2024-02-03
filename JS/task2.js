@@ -1,3 +1,8 @@
+let str = "hello from caDEmy YoU arE wELcoMe";
+
+let low = str.toLowerCase();
+console.log(low);
+
 str = str.replace('hello from caDEmy YoU arE wELcoMe' ,"cademy")
 console.log(str);
 
