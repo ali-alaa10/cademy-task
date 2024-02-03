@@ -84,16 +84,41 @@
 
 // console.log(first + end.replace(uname,""));
 
+// let str = "hello from caDEmy YoU arE wELcoMe";
 
+// let low = str.toLowerCase();
+// console.log(low);
 
-let str = "hello from caDEmy YoU arE wELcoMe";
+// str = str.replace('hello from caDEmy YoU arE wELcoMe' ,"cademy")
+// console.log(str);
 
-let low = str.toLowerCase();
-console.log(low);
+// let first = str.padStart(str.length+3, "$");
+// let end = str.padEnd(str.length+3, "$");
+// console.log(first + end.replace(str,""));
 
-str = str.replace('hello from caDEmy YoU arE wELcoMe' ,"cademy")
-console.log(str);
+let uname = "Ali";
+let uage = "20";
+let uphone = "01121944524";
+let upoints = 0;
 
-let first = str.padStart(str.length+3, "$");
-let end = str.padEnd(str.length+3, "$");
-console.log(first + end.replace(str,""));
+if (uphone.startsWith("010")) {
+  upoints += 5;
+} else if (uphone.startsWith("011")) {
+  upoints += 50;
+} else if (uphone.startsWith("012")) {
+  upoints += 7;
+} else if (uphone.startsWith("015")) {
+  upoints += 10;
+}
+
+console.log(`Hi ${uname} You earned ${upoints} points`);
+
+if (uage >= 18) {
+  console.log(
+    `Holla ${uname} Your Age is ${uage} , You are qualified to travel with us :)`
+  );
+} else {
+  console.log(
+    `Hi ${uname} Your Age is ${uage} , We sorry You are not qualified to travel with us :-(`
+  );
+}
