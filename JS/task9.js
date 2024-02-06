@@ -1,7 +1,7 @@
-let needle = ["js"];
+let needle = "js";
 let haystack = ["php", "js", "python"];
 
-if (haystack.includes(needle[0])) {
+if (haystack.includes(needle)) {
   console.log("Found");
 } else {
   console.log("Not Found");
@@ -9,14 +9,26 @@ if (haystack.includes(needle[0])) {
 
 // Second Way
 
-let foundItem = haystack.find((item) => item === needle[0]);
-console.log(foundItem);
+let chek = haystack.indexOf(needle);
+
+if (haystack.indexOf(needle) != -1) {
+  console.log("Found");
+} else {
+  console.log("Not Found");
+}
 
 // Third Way
 
-let chek = haystack.indexOf("js");
-console.log(chek);
+if (haystack.lastIndexOf(needle) != -1) {
+  console.log("Found");
+} else {
+  console.log("Not Found");
+}
 
 // Four Way
 
-console.log(haystack.includes("js"));
+if (haystack.some((element) => element === needle)) {
+  console.log("Found");
+} else {
+  console.log("Not Found");
+}
