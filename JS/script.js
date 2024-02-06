@@ -165,3 +165,36 @@
 // console.log(`Order Status: ${orderStatusMessage}`);
 
 // ===================================================================================================
+
+// const users = ["Ali", "Zeyad", "Yousef"];
+// users.splice(1, 0, "Palloat");
+// console.log(users);
+
+// ===================================================================================================
+
+// const arr1 = ["C", "A", "D"];
+// const arr2 = ["E", "M", "Y"];
+// const arr3 = ["C", "O", "M"];
+
+// const cademy = arr1.concat(arr2, ".").concat(arr3).join("").toLowerCase();
+// console.log(cademy);
+
+// ===================================================================================================
+
+// const arr1 = ["A", "C", "X"];
+// const arr2 = ["D", "E", "F", "Y"];
+// const allarr = arr2.concat(arr1);
+
+// allarr.sort();
+// allarr.shift("A");
+// allarr.shift("C");
+// allarr.shift("D");
+// allarr.shift("F");
+
+// console.log(allarr);
+
+// const output = allarr.join("").toLowerCase();
+
+// console.log(output);
+
+// ===================================================================================================
