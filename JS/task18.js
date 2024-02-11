@@ -10,5 +10,5 @@ for (let i = 0; i < word.length; i++) {
     }
 }
 
-console.log(output);
+console.log(`the char following it in alphabet : ${output}`);
 
