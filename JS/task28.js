@@ -24,7 +24,7 @@ btn.addEventListener("click", () => {
     let deltxt = document.createTextNode("X");
 
     del.append(deltxt);
-    document.body.append(del);
+    // document.body.append(del);
 
     list_todo.append(del);
 
