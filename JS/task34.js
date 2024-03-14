@@ -9,13 +9,17 @@ function DateNow() {
   }
   if (H > 12) {
     H = H - 12;
-  } else if (H < 10) {
+  }
+  if (H < 10) {
     H = "0" + H;
-  } else if (H === 0) {
+  }
+  if (H === 0) {
     H = 12;
-  } else if (M < 10) {
+  }
+  if (M < 10) {
     M = "0" + M;
-  } else if (S < 10) {
+  }
+  if (S < 10) {
     S = "0" + S;
   }
   document.getElementById("clock").innerHTML = `${H}:${M}:${S} ${AMorPM}`;
