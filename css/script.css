@@ -12,3 +12,16 @@ body{
 .done{
     text-decoration: line-through;
 }
+
+#clock{
+    width: 500px;
+    padding: 25px;
+    background: linear-gradient(88deg,#153677,#4e085f);
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 150px;
+    margin-left: 150px;
+    color: #2aff9f;
+    border-radius: 5px;
+}

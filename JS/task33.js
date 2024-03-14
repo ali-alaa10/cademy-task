@@ -28,7 +28,7 @@ function Fetched() {
   let Obj = Object.entries(localStorage);
   let fet = Obj.filter((value) => {
     let key = value[0];
-    let val = value[1];
+    // let val = value[1];
     return key.startsWith("Task_");
   }).sort();
   return fet;
@@ -78,9 +78,16 @@ document.querySelectorAll("span[data-key]").forEach((sp) => {
 
 function fetchCount() {
   let ArrLi = Fetched();
-  let LastLi = ArrLi[ArrLi.length - 1];
-  // let sliced = LastLi.slice(LastLi.slice("_") , LastLi.indexOf("_done"));
-  console.log(LastLi);
+  if (ArrLi.length > 0) {
+    let LastLi = ArrLi[ArrLi.length - 1];
+    let index = LastLi[0];
+    let sliced = index.slice(index.indexOf("_") + 1, index.indexOf("_done"));
+    console.log(index);
+    console.log(sliced);
+    return sliced || 0;
+  } else {
+    return 0;
+  }
 }
 
 fetchCount();
